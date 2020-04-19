@@ -50,8 +50,8 @@ public class OgrenciBilgiServisi {
 	
 	
 	//TODO
-	@GetMapping("/notEkle")
-	public synchronized List<String> notEkle(@RequestParam String ogrenciAdi, @RequestParam String not,@RequestParam String guncelNot) {
+	@GetMapping("/ogrenciNotEkle")
+	public synchronized List<String> ogrenciNotEkle(@RequestParam String ogrenciAdi, @RequestParam String not,@RequestParam String guncelNot) {
 		ogrenciler.remove(ogrenciAdi);
 		
 		ogrenciler.remove(ogrenciAdi+" "+not);
